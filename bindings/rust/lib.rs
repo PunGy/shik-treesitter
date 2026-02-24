@@ -32,6 +32,8 @@ pub const LANGUAGE: LanguageFn = unsafe { LanguageFn::from_raw(tree_sitter_shik)
 /// [`node-types.json`]: https://tree-sitter.github.io/tree-sitter/using-parsers/6-static-node-types
 pub const NODE_TYPES: &str = include_str!("../../src/node-types.json");
 
+pub const HIGHLIGHTS_QUERY: &str = include_str!("../../queries/shik/highlights.scm");
+
 // NOTE: uncomment these to include any queries that this grammar contains:
 
 // pub const HIGHLIGHTS_QUERY: &str = include_str!("../../queries/highlights.scm");
